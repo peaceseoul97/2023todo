@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        .Wrap{
+            background-image: url(포리/pori2.jpg);
+            height: 500px;
+            border-radius: 10%;
+        }
+        
         .btn_modi {
             display: none;
         }
@@ -51,16 +57,21 @@
    <i class="fa-sharp fa-solid fa-hammer"></i>
    <i class="fa-solid fa-square-check"></i> -->
 
-    <div class="inpWrap">
-        <input type="hidden" class="num">
-        <input type="text" class="inp">
-        <button class="btn_input">입력</button>
-        <button class="btn_modi">수정</button>
+    <div class="Wrap">
+        <div class="inpWrap">
+            <input type="hidden" class="num">
+            <input type="text" class="inp">
+            <button class="btn_input">입력</button>
+            <button class="btn_modi">수정</button>
+        </div>
+        
+        <div class="listView">
+            <ul></ul>
+            <button class="btnAllDel" onclick="listAllDell()">전체삭제</button>
+        </div>
     </div>
-    <div class="listView">
-        <ul></ul>
-        <button class="btnAllDel" onclick="listAllDell()">전체삭제</button>
-    </div>
+
+
     <script>
         let listData = []  
         const inpElem = document.querySelector(".inp");
