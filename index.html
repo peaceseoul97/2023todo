@@ -147,17 +147,14 @@
             let valueData = JSON.stringify(listData)
             localStorage.setItem("todoData",valueData)
 
+            btnIpElem.style.display = "inline-block";
+            btnMoElem.style.display = "none";
             viewData()
         }
 
         function done(index){
             console.log(index)
-            // if( listData[index].done == true ){
-            //     listData[index].done = false
-            // }else{
-            //     listData[index].done = true
-            // }
-
+            
             listData[index].done = !listData[index].done;
 
             // localStorage  insert 
@@ -180,6 +177,9 @@
             // localStorage  insert 
             let valueData = JSON.stringify(listData)
             localStorage.setItem("todoData",valueData)
+
+            btnIpElem.style.display = "inline-block";
+            btnMoElem.style.display = "none";
             viewData()
         }
 
