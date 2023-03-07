@@ -150,6 +150,11 @@
 
         function itemDel(index){
             listData.splice(index,1)
+
+            // localStorage insert
+            let valueData = JSON.stringify(listData)
+            localStorage.setItem("todoData",valueData)
+
             viewData()
         }
 
@@ -162,14 +167,16 @@
             // }
 
             listData[index].done = !listData[index].done;
+
+            //localStorage insert
+            let valueData = JSON.stringfy(listData)
+            localStorage.setItem("todoData",valueData)
+
             viewData()
                 //!는 not을 의미.   오른쪽 항은 true false만 이용.
         }
 
-        function listAllDel (){
-            listData = []
-            viewData()
-        }
+        
 
         // btnAllElem.addEventListener("click",function(){
         //     listData = []
@@ -182,6 +189,16 @@
             numElem.value = index
             btnIpElem.style.display = "none"
             btnMoElem.style.display = "inline-block"
+        }
+
+        function listAllDel (){
+            listData = []
+
+            //localStorage insert
+            let valueData = JSON.stringify(listData)
+            localStorage.setItem("todoData",valueData)
+            
+            viewData()
         }
     </script>
 </body>
