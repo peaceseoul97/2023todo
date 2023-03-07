@@ -1,20 +1,46 @@
-.btn_modi {
-    display: none;
+
+html{
+    background-image: url(../포리/pori2.jpg);
 }
 
-.inpWrap,
-.listView {
+.Wrap{
+
+}
+
+.inpWrap, .listView {
     width: 300px;
     margin: 0 auto;
 }
 
 .inpWrap {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgb(144, 72, 226);
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.a1listView{
+    background-color: gold;
+}
+
+.a1listView ul li{
+    background: rgb(214, 106, 106);
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.btn_modi {
+    display: none;
 }
 
 .listView {
-    background: rgb(199, 230, 89);
+
 }
+
 
 .listView ul li{
     display: flex;
