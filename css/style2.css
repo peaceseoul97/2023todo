@@ -6,10 +6,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px 10px;
-
-
-    /* font-family: 'Climate Crisis', cursive; */
-    /* background: gold; */
 }
 
 .bgWrap .tList {
@@ -18,14 +14,12 @@
     align-items: center;
     padding: 20px 10px;
     text-align: center;
-    /* font: white; */
     color: white;
     border-radius: 50px;
     padding: 10px;
     font-family: 'Caveat', cursive;
     font-weight: bold;
     font-size: 30px;
-
 }
 
 /* inp */
@@ -33,14 +27,15 @@
 .listView {
     width: 500px;
     margin: 0 auto;
-
 }
 
+.inp{width: 300px;}
 .inpWrap {
+    height: 30px;
     padding: 10px 10px;
     margin-bottom: 10px;
-    /* background: gold; */
 }
+
 
 .inpWrap .btn_input,
 .btn_modi {
@@ -48,32 +43,38 @@
 }
 
 .listView {
-    /* background: rgb(109, 106, 212); */
     height: 700px;
     border-radius: 10px;
     padding: 10px 10px;
-    background-color: #fff;
+    background-color: #fff9f9;
+    position: relative;
+    border: 1px solid #000;
+    
 }
 
 .listView .btnAllDel {
-    bottom: 0;
-}
-
-.listView ul {
-    /* margin: 5px 5px; */
+    position: absolute;
+    bottom: 10px;
+    padding: 20px 10px;
+    background: white;
+    border: 2px solid #000;
+    display: block;
+    right: 10px;
+    
 }
 
 .listView ul li {
     display: flex;
     padding: 5px 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .listView ul li .list {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     padding-left: 10px;
-    /* color: white; */
 }
 
 .icon a {
@@ -82,22 +83,17 @@
 
 .listView ul li .icon {
     margin-left: auto;
-    background: #000000;
+    background: white;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 20px;
     gap: 10px;
 }
 
 .listView ul li .icon a {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .item.done {
     background: rgb(221, 64, 174);
 }
-
-/* btn */
-/* .btn_modi {
-    display: none;
-} */

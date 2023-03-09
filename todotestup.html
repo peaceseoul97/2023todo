@@ -16,8 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Climate+Crisis&display=swap"
         rel="stylesheet">
-
-</head>
+    
 
 <body>
     <!-- <i class="fa-solid fa-trash-can"></i>
@@ -30,9 +29,13 @@
         </div>
         <div class="inpWrap">
             <input type="hidden" class="num">
-            <input type="text" class="inp">
-            <button class="btn_input">enter</button>
-            <button class="btn_modi">fix</button>
+            <input type="text" class="inp" placeholder="게을리 살지말자 ^^7">
+            <button class="btn_input">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button class="btn_modi">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+            </button>
         </div>
 
         <div class="listView">
@@ -43,9 +46,9 @@
 
     <script>
         let listData = [
-            { todo: "안승용 바보멍청이", done: false },
-            { todo: "슬기님 완전 천재", done: false },
-            { todo: "이레님 차세대 에이스", done: false },
+            // { todo: "안승용 바보멍청이", done: false },
+            // { todo: "슬기님 완전 천재", done: false },
+            // { todo: "이레님 차세대 에이스", done: false },
 
         ]
 
@@ -152,6 +155,8 @@
             btnIpElem.style.display = "none"
             btnMoElem.style.display = "inline-block"
         }
+
+        
     </script>
 </body>
 
