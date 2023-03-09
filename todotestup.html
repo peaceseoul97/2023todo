@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Climate+Crisis&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,20 +24,20 @@
     <i class="fa-solid fa-hammer"></i>
     <i class="fa-solid fa-square-check"></i> -->
 
-    <div class="bgWrap" style="background-image :url(포리/pori5.jpg)">
+    <div class="bgWrap" style="background-image :url(포리/universe02.jpg)">
         <div class="tList">
-            <h1>TODO LIST</h1>
+            <h1>todo list</h1>
         </div>
         <div class="inpWrap">
             <input type="hidden" class="num">
             <input type="text" class="inp">
-            <button class="btn_input">입력</button>
-            <button class="btn_modi">수정</button>
+            <button class="btn_input">enter</button>
+            <button class="btn_modi">fix</button>
         </div>
-        
+
         <div class="listView">
             <ul></ul>
-            <button class="btnAllDel" onclick="listAllDel()">전체삭제</button>
+            <button class="btnAllDel" onclick="listAllDel()">전체삭제<i class="fa-solid fa-trash-can"></i></button>
         </div>
     </div>
 
@@ -117,11 +120,11 @@
 
         function itemDel(index) {
             listData.splice(index, 1)
-            viewData()
             let valueData = JSON.stringify(listData)
             localStorage.setItem("todoData", valueData)
             btnMoElem.style.display = "none";
             btnIpElem.style.display = "inline-block";
+            viewData()
         }
 
         function done(index) {
