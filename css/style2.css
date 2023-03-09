@@ -1,9 +1,12 @@
 .bgWrap {
-    width: 851px;
-    height: 1500px;
+    width: 700px;
+    height: 1000px;
     margin: 0 auto;
     border-radius: 30px;
-    background: gold;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 10px;
+    /* background: gold; */
 }
 
 .bgWrap .tList {
@@ -14,6 +17,9 @@
     text-align: center;
     /* font: white; */
     color: white;
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 /* inp */
@@ -24,11 +30,13 @@
 }
 
 .inpWrap {
-    background: skyblue;
+    opacity: 0.9;
+    /* background: skyblue; */
+    padding: 10px;
 }
 
 .listView {
-    background: rgb(109, 106, 212);
+    /* background: rgb(109, 106, 212); */
     border-radius: 3px;
     padding: 10px 10px;
 }
@@ -43,6 +51,7 @@
     align-items: center;
     /* justify-content: center; */
     padding-left: 10px;
+    /* color: white; */
 }
 
 .icon a {
