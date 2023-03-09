@@ -11,46 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        /* .btn_modi{
-            display: none;
-        }
-
-        .inpWrap,.listView{
-            width: 300px;
-            margin: 0 auto;
-        }
-
-        .inpWrap{background: skyblue;}
-        .listView{background: rgb(109, 106, 212);}
-
-        .listView ul li{
-            display: flex; 
-            padding: 5px 10px;
-        }
-
-        .listView ul li .list{
-            display: flex; 
-            align-items: center; 
-            padding-left: 10px;
-        }
-        .icon a{
-            color: white;
-        }
-
-        .listView ul li .icon{
-            margin-left: auto;
-            background: #000;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-            gap: 10px;
-        }
-
-        .listView ul li .icon a{color: white;}
-
-        .item.done{background: black;} */
-    </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -59,7 +22,7 @@
     <i class="fa-solid fa-square-check"></i> -->
 
     <div class="bgWrap" style="background-image :url(포리/pori5.jpg)">
-        <div class="tList" style="background-color: black;">
+        <div class="tList">
             <h1>TODO LIST</h1>
         </div>
         <div class="inpWrap">
@@ -68,6 +31,7 @@
             <button class="btn_input">입력</button>
             <button class="btn_modi">수정</button>
         </div>
+        
         <div class="listView">
             <ul></ul>
             <button class="btnAllDel" onclick="listAllDel()">전체삭제</button>
