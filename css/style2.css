@@ -1,0 +1,73 @@
+.bgWrap {
+    width: 851px;
+    height: 1500px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background: gold;
+}
+
+.bgWrap .tList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    text-align: center;
+    /* font: white; */
+    color: white;
+}
+
+/* inp */
+.inpWrap,
+.listView {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.inpWrap {
+    background: skyblue;
+}
+
+.listView {
+    background: rgb(109, 106, 212);
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+.listView ul li {
+    display: flex;
+    padding: 5px 10px;
+}
+
+.listView ul li .list {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left: 10px;
+}
+
+.icon a {
+    color: white;
+}
+
+.listView ul li .icon {
+    margin-left: auto;
+    background: #20d02e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.listView ul li .icon a {
+    color: white;
+}
+
+.item.done {
+    background: rgb(221, 64, 174);
+}
+
+/* btn */
+/* .btn_modi {
+    display: none;
+} */
+
